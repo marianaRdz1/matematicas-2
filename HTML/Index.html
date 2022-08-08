@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Página Matématicas</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid bg-dark light"> 
+        <nav class="navbar navbar-inverse navbar-light bg-secondary  navbar-toggleable-md">
+            <img class="image-fluid" src="../IMG/Matematicas.png" width="100px" height="100px">
+            <a class="navbar-brand text-info" href="../HTML/Index.html" style="font-size: 40px;">Página de la matemáticas</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="navbar-nav">
+                    <div class="row">
+                        <div class="col-12">
+                            <a class="nav-item nav-link active ml-5" href="../HTML/Index.html">Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-4">
+                <h1 class="text-center text-light" >Sumar</h1>
+                <form class="form-group bg-secondary">
+                    <label class="text-light">Ingresa un número:</label>
+                    <input type="number" class="form-control" id="num1">
+                    <label class="text-light">Ingresa otro número:</label>
+                    <input type="number" class="form-control" id="num2"> 
+                    <button type="button" class="btn btn-info btn-block mt-3" id="btnsumar">Sumar</button>
+                    <div id="resultado1" class="alert alert-success mt-3" role="alert"></div>
+                    
+                </form>
+            </div>
+            <div class="col-4">
+                <h1 class="text-center text-light">cuadrado</h1>
+                <form action="" class="form-group bg-secondary">
+                    <label class="text-light">Ingresa el valor de sus lados: </label>
+                    <input type="number" class="form-control" id="num5">
+                    <button type="button" class="btn btn-info btn-block mt-3" id="btncuadrado">area del cuadrado</button>
+                    <div id="resultado3" class="alert alert-success mt-3" role="alert"></div>
+                </form>
+            </div>
+            <div class="col-4">
+                <h1 class="text-center text-light">Checador de precios</h1>
+                <form action="" class="form-group bg-secondary">
+                    <label class="text-light">ingrese el total a pagar</label>
+                    <input  type="text" class="form-control" id="pago">
+                    <button type="button" class="btn btn-info btn-block mt-3" id="btntotal">Calcular</button>
+                    <div  class="alert alert-success mt-3" role="alert" id="calcularT"></div>
+
+                </form>
+            </div>
+   
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <h1 class="text-center text-light">rectangulo</h1>
+                <form class="form-group text-light bg-secondary">
+                    <label class="text-light ">Ingresa valor del lado a:</label>
+                    <input type="number" class="form-control" id="ladoa">
+                    <label class="text-light">Ingresa valor del lado b:</label>
+                    <input type="number" class="form-control" id="ladob">
+                    <button type="button" class="btn btn-info btn-block mt-3" id="btnrectangulo">area del rectangulo</button>
+                    <div id="resultado4" class="alert alert-success mt-3" role="alert"></div>
+                </form>
+            </div>
+            <div class="col-4">
+                <h1 class="text-center text-light">Números desendente</h1>
+                <form class="form-group">
+                    <button onclick="numdesendentes();" type="button" class="my-1 btn btn-success btn-sm btn-block">Mostrar</button>
+                    <div id="x" class="my-1 alert alert-info"></div>
+
+                </form>
+            </div>
+
+            <div class="col-4">
+                <h1 class="text-center text-light">par o impar </h1>
+                <form action="" class="form-group bg-secondary">
+                    <label class="text-light">ingrese numero</label>
+                    <input  type="text" class="form-control" id="num6">
+                    <button type="button" class="btn btn-info btn-block mt-3" id="btnnum">resultado</button>
+                    <div  class="alert alert-success mt-3" role="alert" id="resultado6"></div>
+
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> 
+
+
+
+        <script src="../JS/App.js"></script>
+
+    </body>
+</html>
